@@ -388,10 +388,8 @@ export default function App() {
               {[
                 "Canva",
                 "Basic graphic design",
-                "Presentation design",
                 "Microsoft Office",
                 "ClickUp",
-                "Trello",
                 "Customer service",
                 "Stakeholder communication",
                 "Planning & scheduling",
