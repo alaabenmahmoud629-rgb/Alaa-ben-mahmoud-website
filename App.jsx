@@ -20,7 +20,7 @@ import {
 
 const profilePhotoUrl = "/alaa-profile.jpg";
 const linkedInUrl = "https://www.linkedin.com/in/ben-mahmoud-alla-eddine";
-const email = "alaabenmahmoud620_9@gmail.com";
+const email = "alaabenmahmoud629@gmail.com";
 const phone = "+216 98 606 395";
 
 const experiences = [
