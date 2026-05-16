@@ -18,7 +18,7 @@ import {
   Globe2,
 } from "lucide-react";
 
-const profilePhotoUrl = "/alaa-profile.png";
+const profilePhotoUrl = "/alaa-profile.jpg";
 const linkedInUrl = "https://www.linkedin.com/in/ben-mahmoud-alla-eddine";
 const email = "alaabenmahmoud629@gmail.com";
 const phone = "+216 98 606 395";
