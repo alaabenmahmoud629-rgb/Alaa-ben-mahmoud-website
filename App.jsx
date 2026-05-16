@@ -179,7 +179,7 @@ export default function App() {
                     <p className="mt-6 text-center text-xs font-bold uppercase tracking-[0.32em] text-[#E7D8BB]">Personal Portfolio</p>
                     <h2 className="mx-auto mt-4 max-w-sm text-center text-3xl font-black leading-tight tracking-[-0.03em]">Marketing profile for hospitality, tourism & brand image</h2>
                     <div className="mt-7 grid grid-cols-2 gap-3">
-                <a
+            <a
   key={item.name}
   href={item.link}
   target="_blank"
