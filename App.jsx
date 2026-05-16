@@ -356,7 +356,6 @@ export default function App() {
                 ["French", "C1"],
                 ["English", "B2"],
                 ["Arabic", "Native"],
-                ["Italian", "A2"],
               ].map(([language, level]) => (
                 <div key={language} className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/10 px-4 py-3">
                   <span>{language}</span>
