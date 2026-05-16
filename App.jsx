@@ -68,12 +68,31 @@ const internationalExperiences = [
 ];
 
 const collaborations = [
-  { name: "BoostCom", logo: "/boostcom-logo.png" },
-  { name: "Musk de Djerba", logo: "/musk-de-djerba-logo.png" },
-  { name: "Wallah We Can", logo: "/wallah-we-can-logo.png" },
-  { name: "Indigo Properties", logo: "/indigo-properties-logo.png" },
-  { name: "TEDx Sidi Bou Said", logo: "/tedx-sidi-bou-said-logo.png" },
-  { name: "Personal Mark", logo: "/personal-mark.png" },
+  {
+    name: "BoostCom",
+    logo: "/boostcom-logo.png",
+    link: "https://www.instagram.com/boostcom.tn/",
+  },
+  {
+    name: "Musk de Djerba",
+    logo: "/musk-de-djerba-logo.png",
+    link: "https://www.instagram.com/muskdedjerba/",
+  },
+  {
+    name: "Wallah We Can",
+    logo: "/wallah-we-can-logo.png",
+    link: "https://www.instagram.com/wallahwecan/",
+  },
+  {
+    name: "Indigo Properties",
+    logo: "/indigo-properties-logo.png",
+    link: "https://www.instagram.com/indigoproperties.tn/",
+  },
+  {
+    name: "La Demeure Sidi Bou Saïd",
+    logo: "/personal-mark.png",
+    link: "https://www.instagram.com/lademeuresidibousaid/",
+  },
 ];
 
 const impact = [
@@ -160,8 +179,22 @@ export default function App() {
                     <p className="mt-6 text-center text-xs font-bold uppercase tracking-[0.32em] text-[#E7D8BB]">Personal Portfolio</p>
                     <h2 className="mx-auto mt-4 max-w-sm text-center text-3xl font-black leading-tight tracking-[-0.03em]">Marketing profile for hospitality, tourism & brand image</h2>
                     <div className="mt-7 grid grid-cols-2 gap-3">
-                      {impact.map((item) => (<div key={item.label} className="rounded-3xl border border-white/15 bg-white/10 p-4 backdrop-blur"><p className="text-2xl font-black">{item.number}</p><p className="mt-1 text-xs leading-5 text-white/75">{item.label}</p></div>))}
-                    </div>
+                <a
+  key={item.name}
+  href={item.link}
+  target="_blank"
+  rel="noreferrer"
+  className="flex min-h-36 flex-col items-center justify-center rounded-[2rem] border border-[#E3D5BF] bg-white/80 p-5 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+>
+  <img
+    src={item.logo}
+    alt={`${item.name} logo`}
+    className="max-h-20 max-w-full object-contain"
+  />
+  <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-[#5B6472]">
+    {item.name}
+  </p>
+</a>
                   </div>
                 </div>
               </div>
