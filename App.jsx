@@ -18,7 +18,7 @@ import {
   Plane,
 } from "lucide-react";
 
-const profilePhotoUrl = "/assets/alaa-profile.jpg";
+const profilePhotoUrl = "/alaa-profile.jpg";
 const linkedInUrl = "https://www.linkedin.com/in/ben-mahmoud-alla-eddine";
 const email = "alaabenmahmoud620_9@gmail.com";
 const phone = "+216 98 606 395";
@@ -56,24 +56,24 @@ const internationalExperiences = [
     title: "Exchange Semester in World Heritage Studies",
     period: "April — September 2025",
     text: "International academic experience focused on heritage, culture, sustainability and territorial perspectives.",
-    image: "/assets/germany-exchange.png",
+    image: "/germany-exchange.png",
   },
   {
     place: "Leadership Institute — Washington, DC",
     title: "Political Campaign Management Training",
     period: "April — May 2023",
     text: "Professional development program covering campaign strategy, digital marketing, fundraising, media relations and grassroots organizing.",
-    image: "/assets/washington-training.png",
+    image: "/washington-training.png",
   },
 ];
 
 const collaborations = [
-  { name: "BoostCom", logo: "/assets/boostcom-logo.png" },
-  { name: "Musk de Djerba", logo: "/assets/musk-de-djerba-logo.png" },
-  { name: "Wallah We Can", logo: "/assets/wallah-we-can-logo.png" },
-  { name: "Indigo Properties", logo: "/assets/indigo-properties-logo.png" },
-  { name: "TEDx Sidi Bou Said", logo: "/assets/tedx-sidi-bou-said-logo.png" },
-  { name: "Personal Mark", logo: "/assets/personal-mark.png" },
+  { name: "BoostCom", logo: "/boostcom-logo.png" },
+  { name: "Musk de Djerba", logo: "/musk-de-djerba-logo.png" },
+  { name: "Wallah We Can", logo: "/wallah-we-can-logo.png" },
+  { name: "Indigo Properties", logo: "/indigo-properties-logo.png" },
+  { name: "TEDx Sidi Bou Said", logo: "/tedx-sidi-bou-said-logo.png" },
+  { name: "Personal Mark", logo: "/personal-mark.png" },
 ];
 
 const impact = [
