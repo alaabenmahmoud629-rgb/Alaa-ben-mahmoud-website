@@ -64,17 +64,17 @@ const collaborations = [
   {
     name: "Wallah We Can",
     logo: "/wallah-we-can-logo.png",
-    link: "https://www.instagram.com/wallahwecan/",
+    link: "https://www.instagram.com/wallah_we_can/",
   },
   {
     name: "Indigo Properties",
     logo: "/indigo-properties-logo.png",
-    link: "https://www.instagram.com/indigoproperties.tn/",
+    link: "https://www.instagram.com/indigo_properties/",
   },
   {
     name: "La Demeure Sidi Bou Saïd",
     logo: "/personal-mark.png",
-    link: "https://www.instagram.com/lademeuresidibousaid/",
+    link: "https://www.instagram.com/la_demeure_sidi_bou_said/",
   },
 ];
 
@@ -203,10 +203,9 @@ export default function App() {
             <div className="relative mx-auto w-full max-w-[520px]">
               <div className="relative rounded-[2.5rem] border border-white/80 bg-white/70 p-4 shadow-2xl">
                 <div className="relative overflow-hidden rounded-[2rem] bg-[#143A5A] p-7 text-white">
-                  <div className="mx-auto h-[360px] overflow-hidden rounded-[1.7rem] border-[6px] border-white/85 bg-white/15 shadow-2xl">
-                    <img src={profilePhotoUrl} alt="Portrait of Alaa Ben Mahmoud" className="h-full w-full object-cover" />
-                  </div>
-
+<div className="mx-auto aspect-[9/16] h-[520px] max-h-[75vh] w-full max-w-[330px] overflow-hidden rounded-[2rem] border-[6px] border-white/85 bg-white/15 shadow-2xl">                    <img src={profilePhotoUrl} alt="Portrait of Alaa Ben Mahmoud" className="h-full w-full object-cover" />
+     <img src={profilePhotoUrl} alt="Portrait of Alaa Ben Mahmoud" className="h-full w-full object-cover" />          
+</div>
                   <p className="mt-6 text-center text-xs font-bold uppercase tracking-[0.32em] text-[#E7D8BB]">
                     Personal Portfolio
                   </p>
