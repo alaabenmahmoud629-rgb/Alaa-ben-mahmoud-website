@@ -77,6 +77,53 @@ const collaborations = [
     link: "https://www.instagram.com/la_demeure_sidi_bou_said/",
   },
 ];
+const boostcomClients = [
+  { name: "G Client", logo: "/client-g.png" },
+  { name: "Le Parking du Lac", logo: "/client-parking-du-lac.png" },
+  { name: "FTUSA", logo: "/client-ftusa.png" },
+  { name: "Tunisie Esthétique", logo: "/client-tunisie-esthetique.png" },
+  { name: "Haval", logo: "/client-haval.png" },
+];
+<div className="mx-auto max-w-7xl px-5 pb-16 md:px-8">
+  <div className="mb-8">
+    <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">
+      BoostCom Clients
+    </p>
+    <h3 className="mt-3 text-3xl font-black tracking-[-0.03em] text-[#111827]">
+      Clients I managed through BoostCom
+    </h3>
+  </div>
+
+  <div className="relative overflow-hidden rounded-[2rem] border border-[#E3D5BF] bg-white/70 py-6 shadow-sm">
+    <style>{`
+      @keyframes clients-scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      .clients-track {
+        animation: clients-scroll 26s linear infinite;
+      }
+      .clients-track:hover {
+        animation-play-state: paused;
+      }
+    `}</style>
+
+    <div className="clients-track flex w-max items-center gap-6 px-6">
+      {[...boostcomClients, ...boostcomClients].map((client, index) => (
+        <div
+          key={`${client.name}-${index}`}
+          className="flex h-28 w-44 shrink-0 items-center justify-center rounded-2xl border border-[#E3D5BF] bg-white p-5 shadow-sm"
+        >
+          <img
+            src={client.logo}
+            alt={`${client.name} logo`}
+            className="max-h-16 max-w-full object-contain"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
 
 const internationalExperiences = [
   {
