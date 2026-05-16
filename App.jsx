@@ -34,49 +34,30 @@ const experiences = [
     company: "Wallah We Can",
     role: "Digital Communications & Tools Lead — NGO",
     period: "Sep 2024 — Mar 2025",
-    text: "Digital workflows, CMS/CRM/email/social stack, SOPs, governance frameworks and KPI dashboards for consistent measurable impact.",
+    text: "Digital workflows, CMS/CRM/email/social stack, SOPs, governance frameworks and KPI dashboards.",
   },
   {
     company: "Musk de Djerba",
     role: "Launch Lead — Luxury Guesthouse",
     period: "12 months — 2023",
-    text: "Led the launch and full digital communication strategy, growing online visibility and strengthening guest satisfaction.",
+    text: "Led the launch and full digital communication strategy, growing online visibility and guest satisfaction.",
   },
   {
     company: "BoostCom",
     role: "CEO & Founder",
     period: "2020 — 2024",
-    text: "Founded a hospitality-focused marketing agency, delivering 100+ campaigns for 50+ clients in Tunisia and abroad.",
+    text: "Founded a hospitality-focused marketing agency, delivering 100+ campaigns for 50+ clients.",
   },
 ];
 
 const collaborations = [
-  {
-    name: "BoostCom",
-    logo: "/boostcom-logo.png",
-    link: "https://www.instagram.com/boostcom.tn/",
-  },
-  {
-    name: "Musk de Djerba",
-    logo: "/musk-de-djerba-logo.png",
-    link: "https://www.instagram.com/muskdedjerba/",
-  },
-  {
-    name: "Wallah We Can",
-    logo: "/wallah-we-can-logo.png",
-    link: "https://www.instagram.com/wallah_we_can/",
-  },
-  {
-    name: "Indigo Properties",
-    logo: "/indigo-properties-logo.png",
-    link: "https://www.instagram.com/indigo_properties/",
-  },
-  {
-    name: "La Demeure Sidi Bou Saïd",
-    logo: "/personal-mark.png",
-    link: "https://www.instagram.com/la_demeure_sidi_bou_said/",
-  },
+  { name: "BoostCom", logo: "/boostcom-logo.png", link: "https://www.instagram.com/boostcom.tn/" },
+  { name: "Musk de Djerba", logo: "/musk-de-djerba-logo.png", link: "https://www.instagram.com/muskdedjerba/" },
+  { name: "Wallah We Can", logo: "/wallah-we-can-logo.png", link: "https://www.instagram.com/wallah_we_can/" },
+  { name: "Indigo Properties", logo: "/indigo-properties-logo.png", link: "https://www.instagram.com/indigo_properties/" },
+  { name: "La Demeure Sidi Bou Saïd", logo: "/personal-mark.png", link: "https://www.instagram.com/la_demeure_sidi_bou_said/" },
 ];
+
 const boostcomClients = [
   { name: "G Client", logo: "/client-g.png" },
   { name: "Le Parking du Lac", logo: "/client-parking-du-lac.png" },
@@ -84,46 +65,6 @@ const boostcomClients = [
   { name: "Tunisie Esthétique", logo: "/client-tunisie-esthetique.png" },
   { name: "Haval", logo: "/client-haval.png" },
 ];
-<div className="mx-auto max-w-7xl px-5 pb-16 md:px-8">
-  <div className="mb-8">
-    <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">
-      BoostCom Clients
-    </p>
-    <h3 className="mt-3 text-3xl font-black tracking-[-0.03em] text-[#111827]">
-      Clients I managed through BoostCom
-    </h3>
-  </div>
-
-  <div className="relative overflow-hidden rounded-[2rem] border border-[#E3D5BF] bg-white/70 py-6 shadow-sm">
-    <style>{`
-      @keyframes clients-scroll {
-        from { transform: translateX(0); }
-        to { transform: translateX(-50%); }
-      }
-      .clients-track {
-        animation: clients-scroll 26s linear infinite;
-      }
-      .clients-track:hover {
-        animation-play-state: paused;
-      }
-    `}</style>
-
-    <div className="clients-track flex w-max items-center gap-6 px-6">
-      {[...boostcomClients, ...boostcomClients].map((client, index) => (
-        <div
-          key={`${client.name}-${index}`}
-          className="flex h-28 w-44 shrink-0 items-center justify-center rounded-2xl border border-[#E3D5BF] bg-white p-5 shadow-sm"
-        >
-          <img
-            src={client.logo}
-            alt={`${client.name} logo`}
-            className="max-h-16 max-w-full object-contain"
-          />
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
 
 const internationalExperiences = [
   {
@@ -138,34 +79,30 @@ const internationalExperiences = [
     place: "Leadership Institute — Washington, DC",
     period: "April — May 2023",
     image: "/washington-training.png",
-    text: "Professional development program covering campaign strategy, digital marketing, fundraising, media relations and grassroots organizing.",
+    text: "Training in campaign strategy, digital marketing, fundraising, media relations and grassroots organizing.",
   },
 ];
 
 const recommendations = [
   {
     name: "Lotfi Hamadi",
-    role: "Founder of #WallahWeCan, senior consultant & sustainable development speaker",
-    quote:
-      "Un pro de la com qui a compris la différence entre efficacité et efficience. Il a toujours répondu à nos demandes à temps et avec de la qualité.",
+    role: "Founder of #WallahWeCan",
+    quote: "Un pro de la com qui a compris la différence entre efficacité et efficience.",
   },
   {
     name: "Wassim Ben Ammar",
-    role: "Auto Entrepreneur, UI/UX Designer, Motion & Graphic Designer, Software Engineer",
-    quote:
-      "C'est avec grand enthousiasme que je recommande Ala Ben Mahmoud, fondateur de l'agence de communication BoostCom. Ala combine brillamment son esprit entrepreneurial avec ses études pour offrir des stratégies de communication innovantes et percutantes. Sa vision stratégique et sa capacité à mettre en œuvre des campagnes créatives démontrent une maturité professionnelle et une compréhension du marché bien au-delà de ses années.",
+    role: "UI/UX Designer, Motion & Graphic Designer",
+    quote: "Ala combine brillamment son esprit entrepreneurial avec ses études pour offrir des stratégies innovantes.",
   },
   {
     name: "Tarek Soussi",
     role: "CEO-Manager chez Oeil Des Cyclopes",
-    quote:
-      "Nous recommandons vivement Alaa Ben Mahmoud pour son expertise en communication digitale et sa maîtrise exemplaire des réseaux sociaux. Sa capacité à développer des stratégies innovantes, à optimiser la présence en ligne et à engager efficacement les audiences a considérablement renforcé la visibilité de nos projets.",
+    quote: "Nous recommandons vivement Alaa pour son expertise en communication digitale.",
   },
   {
     name: "Bilel Amdouni",
-    role: "Senior Incubator Program Officer, Digital Marketing & Transformation Consultant",
-    quote:
-      "J’ai eu le plaisir d’accompagner Alaa en tant que mentor. Dès le départ, il s'est distingué par son professionnalisme, sa curiosité intellectuelle et sa volonté permanente de monter en compétences.",
+    role: "Digital Marketing & Transformation Consultant",
+    quote: "Il s'est distingué par son professionnalisme, sa curiosité intellectuelle et sa volonté de monter en compétences.",
   },
 ];
 
@@ -181,7 +118,6 @@ export default function App() {
     <main className="min-h-screen bg-[#F6F1E8] text-[#111827]">
       <section className="relative min-h-screen overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#D8C39F_0%,transparent_32%),linear-gradient(135deg,#F8F4EC_0%,#EDF4F7_42%,#D9E7EF_100%)]" />
-        <div className="absolute right-[-8rem] top-[-10rem] h-[28rem] w-[28rem] rounded-full bg-[#143A5A]/15 blur-3xl" />
 
         <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col px-5 py-6 md:px-8">
           <nav className="flex items-center justify-between rounded-full border border-white/70 bg-white/65 px-5 py-3 shadow-sm backdrop-blur-xl">
@@ -197,10 +133,7 @@ export default function App() {
               <a href="#contact">Contact</a>
             </div>
 
-            <a
-              href={`mailto:${email}`}
-              className="rounded-full bg-[#143A5A] px-5 py-2.5 text-sm font-semibold text-white shadow-md"
-            >
+            <a href={`mailto:${email}`} className="rounded-full bg-[#143A5A] px-5 py-2.5 text-sm font-semibold text-white shadow-md">
               Contact
             </a>
           </nav>
@@ -220,7 +153,7 @@ export default function App() {
               </p>
 
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#4B5563] md:text-lg">
-                Young entrepreneur passionate about innovation, communication and customer experience. Experienced in guesthouse management, digital marketing and event organization, I lead projects that strengthen brand image, customer satisfaction and measurable visibility.
+                Young entrepreneur passionate about innovation, communication and customer experience. Experienced in guesthouse management, digital marketing and event organization.
               </p>
 
               <div className="mt-7 flex flex-wrap gap-3">
@@ -236,12 +169,7 @@ export default function App() {
                 <a href="#experience" className="inline-flex items-center gap-2 rounded-full bg-[#143A5A] px-6 py-3 font-semibold text-white shadow-lg">
                   Explore my work <ArrowRight size={18} />
                 </a>
-                <a
-                  href={linkedInUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-[#D5BD90] bg-white/75 px-6 py-3 font-semibold text-[#143A5A] shadow-sm"
-                >
+                <a href={linkedInUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-[#D5BD90] bg-white/75 px-6 py-3 font-semibold text-[#143A5A] shadow-sm">
                   LinkedIn profile
                 </a>
               </div>
@@ -250,9 +178,10 @@ export default function App() {
             <div className="relative mx-auto w-full max-w-[520px]">
               <div className="relative rounded-[2.5rem] border border-white/80 bg-white/70 p-4 shadow-2xl">
                 <div className="relative overflow-hidden rounded-[2rem] bg-[#143A5A] p-7 text-white">
-<div className="mx-auto aspect-[9/16] h-[520px] max-h-[75vh] w-full max-w-[330px] overflow-hidden rounded-[2rem] border-[6px] border-white/85 bg-white/15 shadow-2xl">                    <img src={profilePhotoUrl} alt="Portrait of Alaa Ben Mahmoud" className="h-full w-full object-cover" />
-     <img src={profilePhotoUrl} alt="Portrait of Alaa Ben Mahmoud" className="h-full w-full object-cover" />          
-</div>
+                  <div className="mx-auto aspect-[9/16] h-[520px] max-h-[75vh] w-full max-w-[330px] overflow-hidden rounded-[2rem] border-[6px] border-white/85 bg-white/15 shadow-2xl">
+                    <img src={profilePhotoUrl} alt="Portrait of Alaa Ben Mahmoud" className="h-full w-full object-cover" />
+                  </div>
+
                   <p className="mt-6 text-center text-xs font-bold uppercase tracking-[0.32em] text-[#E7D8BB]">
                     Personal Portfolio
                   </p>
@@ -324,17 +253,43 @@ export default function App() {
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {collaborations.map((item) => (
-            <a
-              key={item.name}
-              href={item.link}
-              target="_blank"
-              rel="noreferrer"
-              className="flex min-h-36 flex-col items-center justify-center rounded-[2rem] border border-[#E3D5BF] bg-white/80 p-5 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-            >
+            <a key={item.name} href={item.link} target="_blank" rel="noreferrer" className="flex min-h-36 flex-col items-center justify-center rounded-[2rem] border border-[#E3D5BF] bg-white/80 p-5 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
               <img src={item.logo} alt={`${item.name} logo`} className="max-h-20 max-w-full object-contain" />
               <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-[#5B6472]">{item.name}</p>
             </a>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 pb-16 md:px-8">
+        <div className="mb-8">
+          <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">BoostCom Clients</p>
+          <h3 className="mt-3 text-3xl font-black tracking-[-0.03em] text-[#111827]">
+            Clients I managed through BoostCom
+          </h3>
+        </div>
+
+        <div className="relative overflow-hidden rounded-[2rem] border border-[#E3D5BF] bg-white/70 py-6 shadow-sm">
+          <style>{`
+            @keyframes clients-scroll {
+              from { transform: translateX(0); }
+              to { transform: translateX(-50%); }
+            }
+            .clients-track {
+              animation: clients-scroll 26s linear infinite;
+            }
+            .clients-track:hover {
+              animation-play-state: paused;
+            }
+          `}</style>
+
+          <div className="clients-track flex w-max items-center gap-6 px-6">
+            {[...boostcomClients, ...boostcomClients].map((client, index) => (
+              <div key={`${client.name}-${index}`} className="flex h-28 w-44 shrink-0 items-center justify-center rounded-2xl border border-[#E3D5BF] bg-white p-5 shadow-sm">
+                <img src={client.logo} alt={`${client.name} logo`} className="max-h-16 max-w-full object-contain" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -355,7 +310,6 @@ export default function App() {
                 </div>
                 <img src={item.image} alt={item.title} className="relative h-full w-full object-cover" />
               </div>
-
               <div className="p-7">
                 <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#8A6D3B]">{item.period}</p>
                 <h3 className="mt-3 text-2xl font-black">{item.title}</h3>
@@ -373,6 +327,7 @@ export default function App() {
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#143A5A] text-white">
               <GraduationCap size={24} />
             </div>
+
             <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">Academic background</p>
 
             <div className="mt-6 space-y-6">
@@ -415,37 +370,28 @@ export default function App() {
       </section>
 
       <section id="skills" className="mx-auto max-w-7xl px-5 py-16 md:px-8">
-        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="rounded-[2rem] border border-[#E3D5BF] bg-white/75 p-7 shadow-sm">
-            <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#143A5A] text-white">
-              <Globe2 size={24} />
-            </div>
-            <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">Professional development</p>
-            <h3 className="mt-4 text-2xl font-black">Political Campaign Management</h3>
-            <p className="mt-2 font-semibold text-[#143A5A]">Leadership Institute — Washington, DC</p>
-            <p className="mt-4 leading-7 text-[#5B6472]">
-              Intensive training in campaign strategy, voter targeting, GOTV operations, fundraising, digital marketing, media relations, grassroots organizing and compliance best practices.
-            </p>
+        <div className="rounded-[2rem] border border-[#E3D5BF] bg-white/75 p-7 shadow-sm">
+          <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#143A5A] text-white">
+            <Globe2 size={24} />
           </div>
 
-          <div className="rounded-[2rem] border border-[#E3D5BF] bg-white/75 p-7 shadow-sm">
-            <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">Skills</p>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              {[
-                "Canva",
-                "Basic graphic design",
-                "Microsoft Office",
-                "ClickUp",
-                "Customer service",
-                "Stakeholder communication",
-                "Planning & scheduling",
-                "Ownership & accountability",
-              ].map((skill) => (
-                <div key={skill} className="rounded-full border border-[#E3D5BF] bg-[#F8F4EC] px-4 py-2 text-sm font-semibold text-[#4B5563]">
-                  {skill}
-                </div>
-              ))}
-            </div>
+          <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">Skills</p>
+
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              "Canva",
+              "Basic graphic design",
+              "Microsoft Office",
+              "ClickUp",
+              "Customer service",
+              "Stakeholder communication",
+              "Planning & scheduling",
+              "Ownership & accountability",
+            ].map((skill) => (
+              <div key={skill} className="rounded-full border border-[#E3D5BF] bg-[#F8F4EC] px-4 py-2 text-sm font-semibold text-[#4B5563]">
+                {skill}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -464,7 +410,7 @@ export default function App() {
 
           <div className="grid gap-5 md:grid-cols-3">
             {[
-              ["Rotary Family", "Interact Tunis César → Rotaract Tunis César → Rotary Sidi Bou Said. Community service, humanitarian projects, fundraising and partner outreach."],
+              ["Rotary Family", "Community service, humanitarian projects, fundraising and partner outreach."],
               ["TEDx Sidi Bou Said", "Speaker sourcing, audience engagement, registration, stage flow and media support."],
               ["Libertad Club — IHEC", "Campus initiatives, corporate engagement, workshops and awareness campaigns."],
             ].map(([title, text]) => (
@@ -492,51 +438,36 @@ export default function App() {
         `}</style>
 
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
-            <div>
-              <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">Recommendations</p>
-              <h2 className="mt-4 text-4xl font-black tracking-[-0.04em] md:text-5xl">
-                What people say about working with me
-              </h2>
-            </div>
-            <p className="max-w-lg text-[#5B6472]">
-              LinkedIn recommendations displayed in a smooth scrolling section. Hover to pause.
-            </p>
+          <div className="mb-10">
+            <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">Recommendations</p>
+            <h2 className="mt-4 text-4xl font-black tracking-[-0.04em] md:text-5xl">
+              What people say about working with me
+            </h2>
           </div>
         </div>
 
-        <div className="relative">
-          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24 bg-gradient-to-r from-[#F6F1E8] to-transparent" />
-          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24 bg-gradient-to-l from-[#F6F1E8] to-transparent" />
-
-          <div className="recommendation-track flex w-max gap-5 px-5 md:px-8">
-            {[...recommendations, ...recommendations].map((item, index) => (
-              <article
-                key={`${item.name}-${index}`}
-                className="w-[330px] shrink-0 rounded-[2rem] border border-[#E3D5BF] bg-white/80 p-7 shadow-sm md:w-[520px]"
-              >
-                <div className="mb-5 flex items-center justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#143A5A] text-white">
-                    <Quote size={22} />
-                  </div>
-                  <div className="flex gap-1 text-[#C3A36C]">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star key={star} size={15} fill="currentColor" />
-                    ))}
-                  </div>
+        <div className="recommendation-track flex w-max gap-5 px-5 md:px-8">
+          {[...recommendations, ...recommendations].map((item, index) => (
+            <article key={`${item.name}-${index}`} className="w-[330px] shrink-0 rounded-[2rem] border border-[#E3D5BF] bg-white/80 p-7 shadow-sm md:w-[520px]">
+              <div className="mb-5 flex items-center justify-between">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#143A5A] text-white">
+                  <Quote size={22} />
                 </div>
-
-                <p className="max-h-[220px] overflow-hidden text-base leading-7 text-[#4B5563]">
-                  “{item.quote}”
-                </p>
-
-                <div className="mt-6 border-t border-[#E3D5BF] pt-5">
-                  <h3 className="font-black">{item.name}</h3>
-                  <p className="mt-1 text-sm font-semibold text-[#143A5A]">{item.role}</p>
+                <div className="flex gap-1 text-[#C3A36C]">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} size={15} fill="currentColor" />
+                  ))}
                 </div>
-              </article>
-            ))}
-          </div>
+              </div>
+
+              <p className="text-base leading-7 text-[#4B5563]">“{item.quote}”</p>
+
+              <div className="mt-6 border-t border-[#E3D5BF] pt-5">
+                <h3 className="font-black">{item.name}</h3>
+                <p className="mt-1 text-sm font-semibold text-[#143A5A]">{item.role}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -548,9 +479,6 @@ export default function App() {
               <h2 className="mt-4 text-4xl font-black leading-tight tracking-[-0.04em] md:text-6xl">
                 Let’s connect and build meaningful projects.
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/70">
-                Open to hospitality, tourism, communications, marketing, partnerships and customer-experience opportunities.
-              </p>
             </div>
 
             <div className="space-y-3">
