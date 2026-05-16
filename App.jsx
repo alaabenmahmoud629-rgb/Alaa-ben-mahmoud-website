@@ -109,7 +109,7 @@ const recommendations = [
 const impact = [
   { number: "100+", label: "Digital campaigns delivered" },
   { number: "50+", label: "Clients supported" },
-  { number: "+25K", label: "Instagram audience growth" },
+  { number: "+75K", label: "Instagram audience growth" },
   { number: "1M+", label: "Social interactions generated" },
 ];
 
