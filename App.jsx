@@ -50,14 +50,81 @@ const experiences = [
   },
 ];
 
-const collaborations = [
-  { name: "BoostCom", logo: "/boostcom-logo.png", link: "https://www.instagram.com/boostcom.tn/" },
-  { name: "Musk de Djerba", logo: "/musk-de-djerba-logo.png", link: "https://www.instagram.com/muskdedjerba/" },
-  { name: "Wallah We Can", logo: "/wallah-we-can-logo.png", link: "https://www.instagram.com/wallah_we_can/" },
-  { name: "Indigo Properties", logo: "/indigo-properties-logo.png", link: "https://www.instagram.com/indigo_properties/" },
-  { name: "La Demeure Sidi Bou Saïd", logo: "/personal-mark.png", link: "https://www.instagram.com/la_demeure_sidi_bou_said/" },
-];
+<section className="mx-auto max-w-7xl px-5 py-16 md:px-8">
+  <div className="mb-12 max-w-3xl">
+    <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">
+      Projects & Collaborations
+    </p>
+    <h2 className="mt-4 text-4xl font-black tracking-[-0.04em] md:text-5xl">
+      Projects I founded and organizations I collaborated with
+    </h2>
+  </div>
 
+  <div className="mb-14">
+    <div className="mb-6">
+      <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">
+        Projects I Founded
+      </p>
+      <h3 className="mt-3 text-3xl font-black tracking-[-0.03em] text-[#111827]">
+        Entrepreneurial initiatives
+      </h3>
+    </div>
+
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      {foundedProjects.map((item) => (
+        <a
+          key={item.name}
+          href={item.link}
+          target="_blank"
+          rel="noreferrer"
+          className="flex min-h-36 flex-col items-center justify-center rounded-[2rem] border border-[#E3D5BF] bg-white/80 p-5 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <img
+            src={item.logo}
+            alt={`${item.name} logo`}
+            className="max-h-20 max-w-full object-contain"
+          />
+          <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-[#5B6472]">
+            {item.name}
+          </p>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <div>
+    <div className="mb-6">
+      <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">
+        Organizations I Collaborated With
+      </p>
+      <h3 className="mt-3 text-3xl font-black tracking-[-0.03em] text-[#111827]">
+        Professional collaborations
+      </h3>
+    </div>
+
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {collaborations.map((item) => (
+        <a
+          key={item.name}
+          href={item.link}
+          target="_blank"
+          rel="noreferrer"
+          className="flex min-h-36 flex-col items-center justify-center rounded-[2rem] border border-[#E3D5BF] bg-white/80 p-5 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <img
+            src={item.logo}
+            alt={`${item.name} logo`}
+            className="max-h-20 max-w-full object-contain"
+          />
+          <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-[#5B6472]">
+            {item.name}
+          </p>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+  
 const boostcomClients = [
   { name: "G Client", logo: "/client-g.png" },
   { name: "Le Parking du Lac", logo: "/client-parking-du-lac.png" },
