@@ -59,7 +59,7 @@ const foundedProjects = [
   {
     name: "BoostLab",
     logo: "/boostlab-logo.png",
-    link: "#",
+    link: "https://www.instagram.com/boostlabtn_/",
   },
 ];
 
