@@ -472,14 +472,18 @@ export default function App() {
           <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">Skills</p>
 
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              "Canva",
-              "Basic graphic design",
-              "Microsoft Office",
-              "ClickUp",
-              "Customer service",
-              "Stakeholder communication",
-              "Planning & scheduling",
+           [
+  "Hospitality Management",
+  "Guest Experience Management",
+  "Digital Communication Strategy",
+  "Social Media Marketing",
+  "Brand Positioning",
+  "Partnership Development",
+  "Event Coordination",
+  "Customer Relationship Management",
+  "Team Coordination",
+  "Project Management",
+] 
               "Ownership & accountability",
             ].map((skill) => (
               <div key={skill} className="rounded-full border border-[#E3D5BF] bg-[#F8F4EC] px-4 py-2 text-sm font-semibold text-[#4B5563]">
