@@ -301,7 +301,7 @@ export default function App() {
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-white/15"><Languages size={24} /></div>
             <p className="text-sm font-black uppercase tracking-[0.3em] text-[#D8C39F]">Languages</p>
             <div className="mt-6 space-y-4">
-              {[["French", "C1"], ["English", "B2"], ["Arabic", "Native"], ["Italian", "A2"]].map(([language, level]) => (
+              {[["French", "C1"], ["English", "B2"], ["Arabic", "Native"]].map(([language, level]) => (
                 <div key={language} className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/10 px-4 py-3"><span>{language}</span><strong>{level}</strong></div>
               ))}
             </div>
