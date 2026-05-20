@@ -25,7 +25,7 @@ const phone = "+216 98 606 395";
 
 const foundedProjects = [
   { name: "BoostCom", logo: "/boostcom-logo.png", link: "https://www.instagram.com/boostcom.tn/" },
-  { name: "BoostLab", logo: "/boostlab-logo.png", link: "#" },
+  { name: "BoostLab", logo: "/boostlab-logo.png", link: "https://www.instagram.com/boostlabtn_/" },
 ];
 
 const collaborations = [
