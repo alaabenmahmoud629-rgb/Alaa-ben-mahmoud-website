@@ -141,11 +141,11 @@ export default function App() {
                 <Sparkles size={16} /> Hospitality • Tourism • Marketing • Communications
               </div>
               <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-[-0.06em] md:text-7xl lg:text-8xl">Alaa Ben Mahmoud</h1>
-              <p className="mt-5 max-w-2xl text-xl font-semibold text-[#143A5A] md:text-2xl">M2 Student in Hospitality & Tourism Management at IHEC Carthage.</p>
+              <p className="mt-5 max-w-2xl text-xl font-semibold text-[#143A5A] md:text-2xl">Graduated in July 2026</p>
               <p className="mt-5 max-w-2xl text-base leading-8 text-[#4B5563] md:text-lg">Young entrepreneur passionate about innovation, communication and customer experience. Experienced in guesthouse management, digital marketing and event organization, I lead projects that strengthen brand image, customer satisfaction and measurable visibility.</p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <div className="inline-flex items-center gap-2 rounded-full border border-[#D5BD90] bg-white/75 px-4 py-2 text-sm font-semibold text-[#143A5A] shadow-sm"><CalendarCheck size={16} /> Graduation expected July 2026</div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-[#D5BD90] bg-white/75 px-4 py-2 text-sm font-semibold text-[#143A5A] shadow-sm"><Award size={16} /> Available from August 2026</div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#D5BD90] bg-white/75 px-4 py-2 text-sm font-semibold text-[#143A5A] shadow-sm"><CalendarCheck size={16} /> Graduate in Hospitality & Tourism Management from IHEC Carthage.</div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#D5BD90] bg-white/75 px-4 py-2 text-sm font-semibold text-[#143A5A] shadow-sm"><Award size={16} /> Open to opportunities in Tunisia and worldwide.</div>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#experience" className="inline-flex items-center gap-2 rounded-full bg-[#143A5A] px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-[#0F2B42]">Explore my work <ArrowRight size={18} /></a>
