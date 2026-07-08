@@ -47,7 +47,7 @@ const experiences = [
   {
     company: "La Demeure Sidi Bou Said",
     role: "Management Intern — Hospitality & Tourism",
-    period: "January 2026 — Present",
+    period: "January 2026 — June 2026",
     text: "Client prospecting, customer journey support, online and offline marketing, branding and guest experience enhancement.",
   },
   {
@@ -292,7 +292,7 @@ export default function App() {
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#143A5A] text-white"><GraduationCap size={24} /></div>
             <p className="text-sm font-black uppercase tracking-[0.3em] text-[#8A6D3B]">Academic background</p>
             <div className="mt-6 space-y-6">
-              <div><h3 className="text-xl font-black">Master Management in Hospitality and Tourism</h3><p className="mt-1 text-[#5B6472]">IHEC Carthage, 2024 — Present</p></div>
+              <div><h3 className="text-xl font-black">Master Management in Hospitality and Tourism</h3><p className="mt-1 text-[#5B6472]">IHEC Carthage, 2024 — June 2026</p></div>
               <div><h3 className="text-xl font-black">Bachelor’s Degree in Management</h3><p className="mt-1 text-[#5B6472]">Esprit School of Business, 2021 — 2024</p></div>
               <div><h3 className="text-xl font-black">Exchange Semester — World Heritage Studies</h3><p className="mt-1 text-[#5B6472]">BTU Cottbus-Senftenberg, April — September 2025</p></div>
             </div>
